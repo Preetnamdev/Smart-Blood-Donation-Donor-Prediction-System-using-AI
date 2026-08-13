@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Blood Donation & Donor Prediction System</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        <i class="fa-solid fa-droplet"></i>
+        <span>Smart<span>Blood</span></span>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-buttons">
+        <a href="login.html" class="btn login-btn">Login</a>
+        <a href="register.html" class="btn register-btn">Register</a>
+    </div>
+
+</header>
+
+
+<!-- ================= HERO SECTION ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="badge">
+            <i class="fa-solid fa-heart-pulse"></i>
+            AI Powered Blood Donation System
+        </div>
+
+        <h1>
+            Donate Blood.
+            <span>Save Lives.</span>
+        </h1>
+
+        <p>
+            A smart AI-based platform that connects blood donors
+            with patients and predicts the most suitable donors
+            based on blood group, location and availability.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="register.html" class="btn primary-btn">
+                <i class="fa-solid fa-user-plus"></i>
+                Become a Donor
+            </a>
+
+            <a href="request-blood.html" class="btn emergency-btn">
+                <i class="fa-solid fa-truck-medical"></i>
+                Request Blood
+            </a>
+
+        </div>
+
+        <div class="hero-stats">
+
+            <div class="stat">
+                <h3>1000+</h3>
+                <p>Registered Donors</p>
+            </div>
+
+            <div class="stat">
+                <h3>500+</h3>
+                <p>Lives Saved</p>
+            </div>
+
+            <div class="stat">
+                <h3>24/7</h3>
+                <p>Blood Support</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-image">
+
+        <div class="blood-card">
+
+            <div class="blood-icon">
+                <i class="fa-solid fa-droplet"></i>
+            </div>
+
+            <h2>Blood Match</h2>
+
+            <p>AI Donor Prediction</p>
+
+            <div class="match">
+
+                <div class="match-item">
+                    <span>Blood Group</span>
+                    <strong>O+</strong>
+                </div>
+
+                <div class="match-item">
+                    <span>AI Match</span>
+                    <strong>94%</strong>
+                </div>
+
+            </div>
+
+            <button onclick="findDonor()">
+                Find Suitable Donor
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about section" id="about">
+
+    <div class="section-title">
+
+        <span>ABOUT SYSTEM</span>
+
+        <h2>Smart Blood Donation Platform</h2>
+
+        <p>
+            Our system uses Artificial Intelligence and Machine Learning
+            to make blood donor searching faster, smarter and more efficient.
+        </p>
+
+    </div>
+
+
+    <div class="about-container">
+
+        <div class="about-card">
+
+            <div class="about-icon">
+                <i class="fa-solid fa-brain"></i>
+            </div>
+
+            <h3>AI Donor Prediction</h3>
+
+            <p>
+                AI analyzes donor information and predicts the most
+                suitable donors for a blood request.
+            </p>
+
+        </div>
+
+
+        <div class="about-card">
+
+            <div class="about-icon">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+
+            <h3>Nearby Donors</h3>
+
+            <p>
+                Find suitable blood donors based on their location
+                and availability.
+            </p>
+
+        </div>
+
+
+        <div class="about-card">
+
+            <div class="about-icon">
+                <i class="fa-solid fa-shield-heart"></i>
+            </div>
+
+            <h3>Safe & Reliable</h3>
+
+            <p>
+                Donor information and blood requests are securely
+                managed through the system.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FEATURES ================= -->
+
+<section class="features section" id="features">
+
+    <div class="section-title">
+
+        <span>FEATURES</span>
+
+        <h2>Powerful System Features</h2>
+
+        <p>
+            Everything needed to manage blood donation efficiently.
+        </p>
+
+    </div>
+
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-user-plus"></i>
+
+            <h3>Donor Registration</h3>
+
+            <p>
+                Donors can register and maintain their complete profile.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-droplet"></i>
+
+            <h3>Blood Request</h3>
+
+            <p>
+                Patients or hospitals can submit blood requirements.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-robot"></i>
+
+            <h3>AI Prediction</h3>
+
+            <p>
+                Machine learning predicts and ranks suitable donors.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-map-location-dot"></i>
+
+            <h3>Location Matching</h3>
+
+            <p>
+                Identify suitable donors near the required location.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-bell"></i>
+
+            <h3>Emergency Alerts</h3>
+
+            <p>
+                Notify eligible donors about urgent blood requirements.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-comments"></i>
+
+            <h3>AI Assistant</h3>
+
+            <p>
+                Get instant answers about blood donation and eligibility.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= HOW IT WORKS ================= -->
+
+<section class="how-it-works section" id="how-it-works">
+
+    <div class="section-title">
+
+        <span>PROCESS</span>
+
+        <h2>How SmartBlood Works</h2>
+
+        <p>
+            Find the right donor in a few simple steps.
+        </p>
+
+    </div>
+
+
+    <div class="steps">
+
+        <div class="step">
+
+            <div class="step-number">01</div>
+
+            <i class="fa-solid fa-user-plus"></i>
+
+            <h3>Register</h3>
+
+            <p>
+                Create your donor account and complete your profile.
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <div class="step-number">02</div>
+
+            <i class="fa-solid fa-file-medical"></i>
+
+            <h3>Request Blood</h3>
+
+            <p>
+                Enter blood group, location and emergency requirements.
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <div class="step-number">03</div>
+
+            <i class="fa-solid fa-brain"></i>
+
+            <h3>AI Prediction</h3>
+
+            <p>
+                AI analyzes available donors and calculates their match score.
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <div class="step-number">04</div>
+
+            <i class="fa-solid fa-heart-circle-check"></i>
+
+            <h3>Save a Life</h3>
+
+            <p>
+                Contact the most suitable donor and complete the donation.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= AI DONOR PREDICTION ================= -->
+
+<section class="prediction section">
+
+    <div class="prediction-container">
+
+        <div class="prediction-content">
+
+            <span>AI TECHNOLOGY</span>
+
+            <h2>Smart Donor Prediction</h2>
+
+            <p>
+                Our AI model evaluates multiple factors to rank
+                donors according to their suitability.
+            </p>
+
+            <ul>
+
+                <li>
+                    <i class="fa-solid fa-check"></i>
+                    Blood group compatibility
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-check"></i>
+                    Donor location
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-check"></i>
+                    Last donation date
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-check"></i>
+                    Donor availability
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-check"></i>
+                    Previous donation history
+                </li>
+
+            </ul>
+
+            <a href="donor-prediction.html" class="btn primary-btn">
+                Try AI Prediction
+            </a>
+
+        </div>
+
+
+        <div class="prediction-card">
+
+            <h3>AI Match Result</h3>
+
+            <div class="donor-result">
+
+                <div class="donor-avatar">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div class="donor-info">
+
+                    <h4>Rahul Sharma</h4>
+
+                    <p>
+                        <i class="fa-solid fa-droplet"></i>
+                        O+ Blood Group
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        2.4 km away
+                    </p>
+
+                </div>
+
+                <div class="score">
+                    <strong>94%</strong>
+                    <small>Match</small>
+                </div>
+
+            </div>
+
+
+            <div class="donor-result">
+
+                <div class="donor-avatar">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div class="donor-info">
+
+                    <h4>Amit Verma</h4>
+
+                    <p>
+                        <i class="fa-solid fa-droplet"></i>
+                        O+ Blood Group
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        5.1 km away
+                    </p>
+
+                </div>
+
+                <div class="score">
+                    <strong>87%</strong>
+                    <small>Match</small>
+                </div>
+
+            </div>
+
+
+            <div class="donor-result">
+
+                <div class="donor-avatar">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div class="donor-info">
+
+                    <h4>Vikas Singh</h4>
+
+                    <p>
+                        <i class="fa-solid fa-droplet"></i>
+                        O+ Blood Group
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        7.8 km away
+                    </p>
+
+                </div>
+
+                <div class="score">
+                    <strong>79%</strong>
+                    <small>Match</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+    <div>
+
+        <h2>Be Someone's Reason to Live</h2>
+
+        <p>
+            One blood donation can help save lives.
+            Register today and become a blood donor.
+        </p>
+
+        <a href="register.html" class="btn white-btn">
+            Register as Donor
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer id="contact">
+
+    <div class="footer-container">
+
+        <div class="footer-about">
+
+            <div class="logo">
+                <i class="fa-solid fa-droplet"></i>
+                <span>Smart<span>Blood</span></span>
+            </div>
+
+            <p>
+                Smart Blood Donation & Donor Prediction System
+                powered by Artificial Intelligence.
+            </p>
+
+            <div class="social">
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>Quick Links</h3>
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>Services</h3>
+
+            <a href="register.html">Become a Donor</a>
+            <a href="request-blood.html">Request Blood</a>
+            <a href="donor-prediction.html">AI Prediction</a>
+            <a href="chatbot.html">AI Assistant</a>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>Contact</h3>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                support@smartblood.com
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +91 98765 43210
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        <p>
+            © 2026 SmartBlood. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= AI CHAT BUTTON ================= -->
+
+<div class="chat-button" onclick="openChat()">
+
+    <i class="fa-solid fa-robot"></i>
+
+    <span>AI Assistant</span>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

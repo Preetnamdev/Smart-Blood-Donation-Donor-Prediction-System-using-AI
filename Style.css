@@ -1,0 +1,1049 @@
+/* =========================================
+   SMART BLOOD DONATION SYSTEM
+   Main Stylesheet
+========================================= */
+
+/* ---------- RESET ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #ffffff;
+    color: #222;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* ---------- VARIABLES ---------- */
+
+:root {
+    --primary: #d90429;
+    --primary-dark: #a80020;
+    --secondary: #ef233c;
+    --light-red: #fff1f3;
+    --dark: #151515;
+    --gray: #666;
+    --light-gray: #f7f7f7;
+    --white: #ffffff;
+    --border: #eeeeee;
+    --shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+    --radius: 16px;
+}
+
+
+/* ---------- COMMON ---------- */
+
+.section {
+    padding: 90px 7%;
+}
+
+.section-title {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 55px;
+}
+
+.section-title span {
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+    margin: 8px 0 15px;
+    color: var(--dark);
+}
+
+.section-title p {
+    color: var(--gray);
+    font-size: 15px;
+}
+
+
+/* ---------- BUTTON ---------- */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ---------- NAVBAR ---------- */
+
+.navbar {
+    width: 100%;
+    height: 75px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.logo i {
+    color: var(--primary);
+    font-size: 28px;
+}
+
+.logo span span {
+    color: var(--primary);
+}
+
+.navbar nav {
+    display: flex;
+    gap: 28px;
+}
+
+.navbar nav a {
+    color: #444;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: var(--primary);
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.login-btn {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+.login-btn:hover {
+    background: var(--light-red);
+}
+
+.register-btn {
+    background: var(--primary);
+    color: white;
+}
+
+.register-btn:hover {
+    background: var(--primary-dark);
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+    min-height: calc(100vh - 75px);
+    padding: 70px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    background:
+        radial-gradient(circle at 85% 20%, rgba(217, 4, 41, 0.10), transparent 30%),
+        linear-gradient(135deg, #ffffff 50%, #fff6f7);
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 15px;
+    background: var(--light-red);
+    color: var(--primary);
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.15;
+    color: var(--dark);
+    margin-bottom: 22px;
+}
+
+.hero h1 span {
+    display: block;
+    color: var(--primary);
+}
+
+.hero-content > p {
+    max-width: 600px;
+    color: var(--gray);
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.primary-btn {
+    background: var(--primary);
+    color: white;
+}
+
+.primary-btn:hover {
+    background: var(--primary-dark);
+}
+
+.emergency-btn {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+.emergency-btn:hover {
+    background: var(--light-red);
+}
+
+.hero-stats {
+    display: flex;
+    gap: 45px;
+    margin-top: 45px;
+}
+
+.stat h3 {
+    color: var(--primary);
+    font-size: 25px;
+}
+
+.stat p {
+    color: var(--gray);
+    font-size: 12px;
+}
+
+
+/* ---------- HERO CARD ---------- */
+
+.hero-image {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.blood-card {
+    width: 360px;
+    padding: 35px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 25px 60px rgba(217, 4, 41, 0.16);
+    text-align: center;
+    position: relative;
+}
+
+.blood-card::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(217, 4, 41, 0.08);
+    border-radius: 50%;
+    top: -35px;
+    right: -35px;
+}
+
+.blood-icon {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--light-red);
+    border-radius: 50%;
+}
+
+.blood-icon i {
+    color: var(--primary);
+    font-size: 38px;
+}
+
+.blood-card h2 {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.blood-card > p {
+    color: var(--gray);
+    font-size: 13px;
+}
+
+.match {
+    display: flex;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.match-item {
+    flex: 1;
+    padding: 15px;
+    background: var(--light-gray);
+    border-radius: 10px;
+}
+
+.match-item span {
+    display: block;
+    color: var(--gray);
+    font-size: 11px;
+}
+
+.match-item strong {
+    color: var(--primary);
+    font-size: 25px;
+}
+
+.blood-card button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: var(--primary);
+    color: white;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.blood-card button:hover {
+    background: var(--primary-dark);
+}
+
+
+/* ---------- ABOUT ---------- */
+
+.about {
+    background: white;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.about-card {
+    padding: 35px;
+    text-align: center;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    transition: 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow);
+}
+
+.about-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--light-red);
+    border-radius: 50%;
+}
+
+.about-icon i {
+    color: var(--primary);
+    font-size: 28px;
+}
+
+.about-card h3 {
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+.about-card p {
+    color: var(--gray);
+    font-size: 13px;
+}
+
+
+/* ---------- FEATURES ---------- */
+
+.features {
+    background: var(--light-gray);
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    padding: 30px;
+    background: white;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-7px);
+    box-shadow: var(--shadow);
+}
+
+.feature-card > i {
+    color: var(--primary);
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+.feature-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.feature-card p {
+    color: var(--gray);
+    font-size: 13px;
+}
+
+
+/* ---------- HOW IT WORKS ---------- */
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.step {
+    text-align: center;
+    padding: 25px;
+    position: relative;
+}
+
+.step-number {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    background: var(--primary);
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.step > i {
+    color: var(--primary);
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.step h3 {
+    margin-bottom: 8px;
+}
+
+.step p {
+    color: var(--gray);
+    font-size: 13px;
+}
+
+
+/* ---------- PREDICTION ---------- */
+
+.prediction {
+    background: #fff6f7;
+}
+
+.prediction-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.prediction-content > span {
+    color: var(--primary);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.prediction-content h2 {
+    font-size: 38px;
+    margin: 10px 0 15px;
+}
+
+.prediction-content > p {
+    color: var(--gray);
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.prediction-content ul {
+    margin-bottom: 30px;
+}
+
+.prediction-content li {
+    margin: 12px 0;
+    color: #444;
+    font-size: 14px;
+}
+
+.prediction-content li i {
+    color: var(--primary);
+    margin-right: 10px;
+}
+
+.prediction-card {
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+
+.prediction-card h3 {
+    margin-bottom: 20px;
+}
+
+.donor-result {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.donor-result:last-child {
+    border-bottom: none;
+}
+
+.donor-avatar {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--light-red);
+    border-radius: 50%;
+}
+
+.donor-avatar i {
+    color: var(--primary);
+}
+
+.donor-info {
+    flex: 1;
+}
+
+.donor-info h4 {
+    font-size: 14px;
+}
+
+.donor-info p {
+    color: var(--gray);
+    font-size: 11px;
+    margin-top: 2px;
+}
+
+.donor-info p i {
+    color: var(--primary);
+    margin-right: 4px;
+}
+
+.score {
+    text-align: center;
+}
+
+.score strong {
+    display: block;
+    color: var(--primary);
+    font-size: 18px;
+}
+
+.score small {
+    color: var(--gray);
+    font-size: 10px;
+}
+
+
+/* ---------- CTA ---------- */
+
+.cta {
+    padding: 75px 7%;
+    text-align: center;
+    background: var(--primary);
+    color: white;
+}
+
+.cta h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.cta p {
+    max-width: 600px;
+    margin: 0 auto 25px;
+    opacity: 0.9;
+    font-size: 14px;
+}
+
+.white-btn {
+    background: white;
+    color: var(--primary);
+}
+
+.white-btn:hover {
+    background: #f5f5f5;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    background: #151515;
+    color: white;
+    padding-top: 60px;
+}
+
+.footer-container {
+    padding: 0 7% 50px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.3fr;
+    gap: 50px;
+}
+
+.footer-about {
+    max-width: 350px;
+}
+
+.footer-about .logo {
+    color: white;
+    margin-bottom: 18px;
+}
+
+.footer-about p {
+    color: #aaa;
+    font-size: 13px;
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social a {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #252525;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    background: var(--primary);
+}
+
+.footer-links h3 {
+    margin-bottom: 18px;
+    font-size: 16px;
+}
+
+.footer-links a {
+    display: block;
+    color: #aaa;
+    font-size: 13px;
+    margin: 10px 0;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: white;
+    padding-left: 4px;
+}
+
+.footer-links p {
+    color: #aaa;
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.footer-links p i {
+    color: var(--primary);
+    margin-right: 7px;
+}
+
+.copyright {
+    padding: 20px 7%;
+    border-top: 1px solid #292929;
+    text-align: center;
+}
+
+.copyright p {
+    color: #777;
+    font-size: 12px;
+}
+
+
+/* ---------- AI CHAT BUTTON ---------- */
+
+.chat-button {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 18px;
+    background: var(--primary);
+    color: white;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(217, 4, 41, 0.3);
+    cursor: pointer;
+    z-index: 999;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.chat-button:hover {
+    transform: translateY(-4px);
+    background: var(--primary-dark);
+}
+
+.chat-button i {
+    font-size: 18px;
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 1100px) {
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero {
+        padding: 60px 5%;
+    }
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .section {
+        padding: 75px 5%;
+    }
+
+    .about-container,
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-container {
+        padding-left: 5%;
+        padding-right: 5%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 850px) {
+
+    .navbar nav {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    .hero-content {
+        max-width: 700px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-stats {
+        justify-content: center;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .prediction-container {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .prediction-content {
+        text-align: center;
+    }
+
+    .prediction-content ul {
+        display: inline-block;
+        text-align: left;
+    }
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        height: 68px;
+        padding: 0 20px;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+
+    .logo i {
+        font-size: 23px;
+    }
+
+    .nav-buttons {
+        gap: 5px;
+    }
+
+    .nav-buttons .btn {
+        padding: 8px 12px;
+        font-size: 11px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 55px 20px;
+    }
+
+    .hero h1 {
+        font-size: 39px;
+    }
+
+    .hero-content > p {
+        font-size: 14px;
+    }
+
+    .hero-stats {
+        gap: 20px;
+    }
+
+    .stat h3 {
+        font-size: 20px;
+    }
+
+    .stat p {
+        font-size: 10px;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+
+    .blood-card {
+        width: 100%;
+        max-width: 350px;
+        padding: 28px;
+    }
+
+    .section {
+        padding: 65px 20px;
+    }
+
+    .section-title {
+        margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+        font-size: 29px;
+    }
+
+    .about-container,
+    .feature-grid,
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .about-card,
+    .feature-card {
+        padding: 25px;
+    }
+
+    .prediction-content h2 {
+        font-size: 30px;
+    }
+
+    .prediction-card {
+        padding: 20px;
+    }
+
+    .donor-result {
+        gap: 10px;
+    }
+
+    .donor-avatar {
+        width: 42px;
+        height: 42px;
+    }
+
+    .cta {
+        padding: 60px 20px;
+    }
+
+    .cta h2 {
+        font-size: 29px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .copyright {
+        padding: 18px 20px;
+    }
+
+    .chat-button {
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .chat-button span {
+        display: none;
+    }
+
+    .chat-button {
+        width: 52px;
+        height: 52px;
+        padding: 0;
+        justify-content: center;
+    }
+}
+
+
+/* ---------- ANIMATIONS ---------- */
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.hero-content,
+.hero-image {
+    animation: fadeUp 0.8s ease forwards;
+}
+
+
+/* ---------- SELECTION ---------- */
+
+::selection {
+    background: var(--primary);
+    color: white;
+}
+
+
+/* ---------- SCROLLBAR ---------- */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+}
